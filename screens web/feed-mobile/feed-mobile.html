@@ -3,49 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="map.css">
-    <link rel="stylesheet" href="../css/leaflet.css" />
-    <script src="../js/leaflet.js"></script>
-    <title>Home</title>
+    <link rel="stylesheet" href="feed-mobile.css">
+
+    <title>Feed</title>
 </head>
 
-<body onload="update_zoom()" style="z-index: -2;">
-    <div id="map" style="z-index: 0">
-    </div>
-    <div id="icons-here">
-        <!--        <div style="top: 30%;right: 20%" class="my-position d-flex justify-content-center align-items-center">-->
-        <!--            <div class="orange-circle"></div>-->
-        <!--        </div>-->
-        <!--        <div style="top:30%;left:40%;" class="position-fixed">-->
-        <!--            <a href="#" onclick="collapse_toggle()">-->
-        <!--                <div class="geopoint d-flex justify-content-center align-items-center pb-2 ">-->
-        <!--                    <div class="dog-img"></div>-->
-        <!--                </div>-->
-        <!--            </a>-->
-        <!--        </div>-->
-    </div>
-    <footer class="nav-bar">
-        <button class="nav-bar__element" onclick="location.href='../feed-mobile/feed-mobile.html'">
-            <img src="lenta.svg" alt="search_ico" class="nav-bar__element__icon">
-            <div class="nav-bar__element__title">Лента событий</div>
-        </button>
-        <button class="nav-bar__element">
-            <img src="map.svg" alt="search_ico" class="nav-bar__element__icon">
-            <div class="nav-bar__element__title">Карта событий</div>
-        </button>
-        <button class="nav-bar__element" onclick="document.location.href = '../chat_window/chat.html'">
-            <img src="messenger.svg" alt="search_ico" class="nav-bar__element__icon">
-            <div class="nav-bar__element__title">Сообщения</div>
-        </button>
-        <button class="nav-bar__element">
-            <img src="profile.svg" alt="search_ico" class="nav-bar__element__icon" onclick="location.href='../anketa/anketa.html'">
-            <div class="nav-bar__element__title">Анкета</div>
-        </button>
-    </footer>
-    <div class="search-bar-wrapper" style="z-index: 10;">
+<div>
+    <div class="mb-3 search-bar-wrapper" style="z-index: 10;">
         <div class="search-bar d-inline-flex justify-content-start align-items-center h-100">
             <div id="search-icon" class="grey-search-icon" onclick="search_history_close()"></div>
             <div class="w-100"><input onclick="search_history_open()" type="email" class="form-control" id="line-edit"
@@ -73,6 +43,45 @@
             </div>
         </div>
     </div>
+    <div class="event-card-wrapper">
+        <a class="event-card mb-3" href="#">
+            <img src="kanban.png" alt="image" srcset="">
+            <div class="title">Работодатель в Вашем городе устроил <b>Python Cup</b>!</div>
+            <div class="description">С вашими компетенциями стоит поучаствовать!</div>
+        </a>
+
+        <a class="event-card mb-3" href="#">
+            <img src="Github.png" alt="image" srcset="">
+            <div class="title">Вы создали новый репозиторий на <b>GitHub</b>!</div>
+            <div class="description">Новый проект? Расскажите о нем!</div>
+        </a>
+
+        <a href="#" class="event-card mb-3 event-employer">
+            <div class="title">Вами заинтересовался работодатель</div>
+            <div href="#" class="learn-more">Узнать подробнее <img src="learn-more-arrow.svg" alt="" srcset=""></div>
+        </a>
+    </div>
+    <footer class="nav-bar">
+        <button class="nav-bar__element" onclick="location.href='#'">
+            <img src="lenta.svg" alt="search_ico" class="nav-bar__element__icon">
+            <div class="nav-bar__element__title">Лента событий</div>
+        </button>
+        <button class="nav-bar__element" onclick="document.location.href='../map/map.html'">
+            <img src="map.svg" alt="search_ico" class="nav-bar__element__icon">
+            <div class="nav-bar__element__title">Карта событий</div>
+        </button>
+        <button class="nav-bar__element" onclick="document.location.href = '../chat_window/chat.html'">
+            <img src="messenger.svg" alt="search_ico" class="nav-bar__element__icon">
+            <div class="nav-bar__element__title">Сообщения</div>
+        </button>
+        <button class="nav-bar__element" onclick="document.location.href='../anketa/anketa.html'">
+            <img src="navbar-profile.svg" alt="search_ico" class="nav-bar__element__icon">
+            <div class="nav-bar__element__title">Анкета</div>
+        </button>
+    </footer>
+
+
+    </body>
     <script>
         var opened = false;
         var park_id = 0;
@@ -98,8 +107,5 @@
             opened ? collapse_open() : collapse_close();
         }
     </script>
-    <script src="../../../cordova.js"></script>
-    <script src="map.js"></script>
-</body>
 
 </html>

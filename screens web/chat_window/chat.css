@@ -150,7 +150,7 @@ h3.text-common {
 .header {
   height: 50px;
   width: 100%;
-  background: linear-gradient(134.13deg, #8d98ff -0.7%, #bfa7fd 97.82%);
+  background: linear-gradient(#4A30EE 100%, #8E94FF 100%);
   display: flex;
   justify-content: center;
   align-items: center;

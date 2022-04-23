@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../css/normalize.css">
-    <link rel="stylesheet" href="../../css/bootstrap.css">
-    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="chat-dialogue.css">
 
     <title>Chat</title>
@@ -16,11 +16,11 @@
 
 <body>
     <div class="chat-hat">
-        <button class="arrow-back">
-            <img src="../../svg/chat-arrow-back.svg" alt="<" srcset="">
+        <button class="arrow-back" onclick="document.location.href = '../chat_window/chat.html'">
+            <img src="../svg/chat-arrow-back.svg" alt="<" srcset="">
         </button>
         <div class="title">
-            SkillsCloud
+            Чат
         </div>
         <img src="chat-profile-pic.png" alt="" class="profile-pic">
     </div>
@@ -47,10 +47,10 @@
     </div>
 
     <form method="POST" action="" onsubmit="" class="chat-message-form">
-        <button class="btn-attachment"><img src="../../svg/chat-attachment.svg" alt="&"></button>
+        <button class="btn-attachment"><img src="../svg/chat-attachment.svg" alt="&"></button>
         <input type="text" placeholder="Сообщение..." class="form-control message-form" id="msg_input">
         <button type="submit" onclick="send_message(my_id, his_id, document.getElementById('msg_input').value)"
-            class="btn-send"><img src="../../svg/chat-arrow-send.svg" alt="->"></button>
+            class="btn-send"><img src="../svg/chat-arrow-send.svg" alt="->"></button>
     </form>
 
 

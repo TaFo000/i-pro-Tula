@@ -7,7 +7,7 @@ html {
   height: 50px;
   width: 100%;
 
-  background: linear-gradient(134.13deg, #8d98ff -0.7%, #bfa7fd 97.82%);
+  background: linear-gradient(#4A30EE 100%, #4A30EE 100%);
 
   display: flex;
   flex-direction: row;
@@ -85,7 +85,7 @@ body {
   height: 36px;
   margin: 12px;
   padding: 12px;
-  background: #6b6cf2;
+  background: #4224FC;
   border: none;
   border-radius: 18px;
 

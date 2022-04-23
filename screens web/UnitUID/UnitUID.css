@@ -34,7 +34,7 @@
 }
 
 .btn-1{
-    background: linear-gradient(125.12deg, #BC85FF -4.39%, #6259FC 109.98%);
+    background: #4224FC;
     border-radius: 43px;
     Width: 165px;
     Height: 46px;
@@ -48,16 +48,15 @@
 }
 
 .btn-2{
-    background: #f3f5f8;
+    background: #4224FC;;
     border-radius: 43px;
-    border-color: #BC85FF;
     Width: 165px;
     Height: 46px;
     margin-top: 58px;
     margin-bottom: 15px;
     font-family: 'Raleway', sans-serif;
     font-size: 10px;
-    color: #BC85FF;
+    color: white;
 }
 
 .btn-div{
