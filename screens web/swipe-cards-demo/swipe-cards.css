@@ -11,7 +11,7 @@ body {
 
 .swipe-card {
   position: relative;
-  background: var(--blue-grad-300);
+  background: url(Background.png);
   max-height: 650px;
   max-width: 330px;
   width: 100%;

@@ -69,6 +69,7 @@ body {
 
 .tinder--card {
   display: inline-block;
+  background: url(Background.png);
   width: 90vw;
   max-width: px;
   height: 70vh;
