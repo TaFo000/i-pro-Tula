@@ -1,7 +1,7 @@
 .panel {
   width: 760px;
   height: 400px;
-  background: linear-gradient(141.21deg, #8fcdfd 4.63%, #7075f4 88.27%);
+  background: linear-gradient(#2D0FDE 100%, #BFA7FD 100%);
   box-shadow: 0px 11px 24px -10px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
 }
@@ -82,6 +82,7 @@ h2 {
 .art {
   width: 400px;
   height: 400px;
+  margin-left: 10px;
   background: url("art.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -92,10 +93,11 @@ button {
   border-radius: 73px;
 }
 h2 {
-  background: linear-gradient(125.12deg, #bc85ff -4.39%, #6259fc 109.98%);
+  background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-size: 24px;
   text-fill-color: transparent;
 
   text-shadow: 48px 4px 74px #f3f5f8;
@@ -121,9 +123,9 @@ p {
   cursor: pointer;
 }
 .panel {
-  width: 800px;
-  height: 400px;
-  background: linear-gradient(134.13deg, #8d98ff -0.7%, #bfa7fd 97.82%);
+  width: 1160px;
+  height: 420px;
+  background: linear-gradient(#2D0FDE 100%, #BFA7FD 100%);
   box-shadow: 0px 11px 24px -10px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
   cursor: pointer;
@@ -147,7 +149,7 @@ h1 {
 }
 h6 {
   color: #fafafa;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 350;
   line-height: 25.04px;
 }
@@ -191,3 +193,4 @@ p.right {
   width: 111px;
   height: 37px;
 }
+
