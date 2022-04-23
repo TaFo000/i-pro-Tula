@@ -133,14 +133,29 @@ p {
 body {
   background-color: #f3f5f8;
 }
-.iphone {
-  width: 500px;
-  height: 400px;
-  background: url("iphone.png");
+.image {
+  width: 520px;
+  height: 520px;
+  background: url("computer.svg");
   background-repeat: no-repeat;
   background-position: -30px center;
   background-size: 500px;
+  position: relative;
+  bottom: 30px;
 }
+
+.image2 {
+  width: 175px;
+  height: 135px;
+  background: url("hat.svg");
+  background-repeat: no-repeat;
+  background-position: -30px center;
+  background-size: cover;
+  position: relative;
+  bottom: 50px;
+  right: 850px;
+}
+
 h1 {
   color: #fafafa;
   font-size: 40px;
