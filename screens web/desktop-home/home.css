@@ -156,6 +156,15 @@ body {
   right: 850px;
 }
 
+.iphone {
+  width: 500px;
+  height: 400px;
+  background: url("iphone.png");
+  background-repeat: no-repeat;
+  background-position: -30px center;
+  background-size: 500px;
+}
+
 h1 {
   color: #fafafa;
   font-size: 40px;
@@ -172,34 +181,35 @@ body {
   background: #f3f5f8;
 }
 h2.left {
-  background: linear-gradient(125.12deg, #bc85ff -4.39%, #6259fc 109.98%);
+  background: #1D2A71;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 50px;
+  margin-bottom: 0px;
 }
 p.left {
-  background: linear-gradient(125.12deg, #bc85ff -4.39%, #6259fc 109.98%);
+  background: #1D2A71;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  font-size: 30px;
+  font-size: 20px;
   opacity: 0.8;
 }
 h3.right {
   color: #fafafa;
   background: unset;
   opacity: 0.8;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 40px;
+  line-height: 40px;
 }
 p.right {
   color: #fafafa;
   opacity: 0.8;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #btnLog{
@@ -209,3 +219,7 @@ p.right {
   height: 37px;
 }
 
+.card{
+  width: 560px;
+  height: 340px;
+}
